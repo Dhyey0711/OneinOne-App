@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:text="Precision in every press!"
+        android:layout_gravity="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:padding="16dp"
+        android:textIsSelectable="true"
+        android:longClickable="true" />
+
+    <EditText
+        android:id="@+id/screen"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:gravity="end"
+        android:text="0"
+        android:textSize="24sp"
+        android:background="#EEEEEE"
+        android:padding="16dp"
+        android:inputType="none"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:clickable="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="8dp" />
+
+
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:text=""
+        android:textSize="24sp"
+        android:padding="16dp"
+        android:layout_marginBottom="8dp" />
+
+    <!-- TableLayout for the buttons -->
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:stretchColumns="*"
+        android:shrinkColumns="*">
+
+        <!-- Row for scientific functions 1 -->
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+            <Button
+                android:id="@+id/sin"
+                style="@style/CalcButton"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:backgroundTint="@color/black"
+                android:text="Sin"
+                app:cornerRadius="10dp" />
+
+            <Button
+                android:id="@+id/cos"
+                style="@style/CalcButton"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:backgroundTint="@color/black"
+                android:text="Cos"
+                app:cornerRadius="10dp" />
+
+            <Button
+                android:id="@+id/tan"
+                style="@style/CalcButton"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:backgroundTint="@color/black"
+                android:text="Tan"
+                app:cornerRadius="10dp" />
+
+            <Button
+                android:id="@+id/del"
+                style="@style/CalcButton"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="DEL"
+                android:backgroundTint="@color/black"
+                app:cornerRadius="10dp" />
+        </TableRow>
+
+        <!-- Row for scientific functions 2 -->
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+            <Button
+                android:id="@+id/ln"
+                style="@style/CalcButton"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:backgroundTint="@color/black"
+                android:text="ln"
+                app:cornerRadius="10dp" />
+
+            <Button
+                android:id="@+id/ac"
+                style="@style/CalcButton"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:backgroundTint="@color/black"
+                android:text="AC"
+                app:cornerRadius="10dp" />
+
+            <Button
+                android:id="@+id/sqrt"
+                style="@style/CalcButton"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:backgroundTint="@color/black"
+                android:text="√"
+                app:cornerRadius="10dp" />
+
+            <Button
+                android:id="@+id/pow"
+                style="@style/CalcButton"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:backgroundTint="@color/black"
+                android:text="^"
+                app:cornerRadius="10dp" />
+        </TableRow>
+
+        <!-- Row for memory and clear buttons -->
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/copy"
+                style="@style/CalcButton"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:backgroundTint="@color/black"
+                app:cornerRadius="10dp"
+                app:icon="@drawable/copy"
+                app:iconGravity="start|end"
+                app:iconSize="26dp"
+                app:iconTint="#FFFFFF" />
+            <Button
+                android:id="@+id/log"
+                style="@style/CalcButton"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:backgroundTint="@color/black"
+                android:text="log"
+                app:cornerRadius="10dp" />
+
+
+
+            <Button
+                android:id="@+id/percentage"
+                style="@style/CalcButton"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:backgroundTint="@color/black"
+                android:text="%"
+                app:cornerRadius="10dp" />
+
+            <Button
+                android:id="@+id/rparen"
+                style="@style/CalcButton"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:backgroundTint="@color/black"
+                android:text="()"
+                app:cornerRadius="10dp" />
+        </TableRow>
+
+        <!-- Row for numbers 7, 8, 9 and division -->
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+            <Button
+                android:id="@+id/num7"
+                style="@style/CalcButton"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:backgroundTint="#EEEEEE"
+                android:textColor="@color/black"
+                android:text="7"
+                app:cornerRadius="10dp" />
+
+            <Button
+                android:id="@+id/num8"
+                style="@style/CalcButton"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="8"
+                android:backgroundTint="#EEEEEE"
+                android:textColor="@color/black"
+                app:cornerRadius="10dp" />
+
+            <Button
+                android:id="@+id/num9"
+                style="@style/CalcButton"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="9"
+                android:backgroundTint="#EEEEEE"
+                android:textColor="@color/black"
+                app:cornerRadius="10dp" />
+
+            <Button
+                android:id="@+id/div"
+                style="@style/CalcButton"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:backgroundTint="@color/black"
+                android:text="/"
+                app:cornerRadius="10dp" />
+        </TableRow>
+
+        <!-- Row for numbers 4, 5, 6 and multiplication -->
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+            <Button
+                android:id="@+id/num4"
+                style="@style/CalcButton"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="4"
+                android:backgroundTint="#EEEEEE"
+                android:textColor="@color/black"
+                app:cornerRadius="10dp" />
+
+            <Button
+                android:id="@+id/num5"
+                style="@style/CalcButton"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="5"
+                android:backgroundTint="#EEEEEE"
+                android:textColor="@color/black"
+                app:cornerRadius="10dp" />
+
+            <Button
+                android:id="@+id/num6"
+                style="@style/CalcButton"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="6"
+                android:backgroundTint="#EEEEEE"
+                android:textColor="@color/black"
+                app:cornerRadius="10dp" />
+
+            <Button
+                android:id="@+id/mul"
+                style="@style/CalcButton"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:backgroundTint="@color/black"
+                android:text="*"
+                app:cornerRadius="10dp" />
+        </TableRow>
+
+        <!-- Row for numbers 1, 2, 3 and subtraction -->
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+            <Button
+                android:id="@+id/num1"
+                style="@style/CalcButton"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="1"
+                android:backgroundTint="#EEEEEE"
+                android:textColor="@color/black"
+                app:cornerRadius="10dp" />
+
+            <Button
+                android:id="@+id/num2"
+                style="@style/CalcButton"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="2"
+                android:backgroundTint="#EEEEEE"
+                android:textColor="@color/black"
+                app:cornerRadius="10dp" />
+
+            <Button
+                android:id="@+id/num3"
+                style="@style/CalcButton"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="3"
+                android:backgroundTint="#EEEEEE"
+                android:textColor="@color/black"
+                app:cornerRadius="10dp" />
+
+            <Button
+                android:id="@+id/sub"
+                style="@style/CalcButton"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:backgroundTint="@color/black"
+                android:text="-"
+                app:cornerRadius="10dp" />
+        </TableRow>
+
+        <!-- Row for number 0, decimal point, equals button (larger), and addition -->
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/num0"
+                style="@style/CalcButton"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="0"
+                android:backgroundTint="#EEEEEE"
+                android:textColor="@color/black"
+                app:cornerRadius="10dp" />
+
+            <Button
+                android:id="@+id/num_dot"
+                style="@style/CalcButton"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="."
+                android:backgroundTint="#EEEEEE"
+                android:textColor="@color/black"
+                app:cornerRadius="10dp" />
+
+            <Button
+                android:id="@+id/equal"
+                style="@style/CalcButton"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:backgroundTint="#575757"
+                android:text="="
+                app:cornerRadius="10dp" />
+
+            <Button
+                android:id="@+id/add"
+                style="@style/CalcButton"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:backgroundTint="@color/black"
+                android:text="+"
+                app:cornerRadius="10dp" />
+        </TableRow>
+
+    </TableLayout>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/textViewTemperature"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mobile Temperature !"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textSize="32sp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/ar_one_sans_medium"
+        android:layout_marginTop="24dp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imageViewCondition"
+        android:layout_width="100dp"
+        android:backgroundTint="@color/black"
+        android:layout_height="100dp"
+        android:layout_marginTop="36dp"
+        android:layout_gravity="center"
+        android:background="@drawable/tempreture" />
+
+    <TextView
+        android:id="@+id/textViewTemperatureResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/buttonMeasure"
+        android:layout_gravity="start"
+        android:layout_marginTop="24dp"
+        android:textColor="@color/black"
+        android:text="Temperature : --"
+        android:textSize="26sp"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/textViewConditionResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/buttonMeasure"
+        android:layout_gravity="start"
+        android:layout_marginTop="24dp"
+        android:textColor="@color/black"
+        android:text="Condition  : --"
+        android:textSize="26sp"
+        android:textStyle="bold"/>
+
+    <Button
+        android:id="@+id/buttonMeasure"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="36dp"
+        android:backgroundTint="#000000"
+        android:text="Lets's Measure!"
+        android:textStyle="bold"
+        app:cornerRadius="10dp" />
+
+</LinearLayout>

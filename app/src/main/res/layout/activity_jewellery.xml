@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CommonTools.Jewellery">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:padding="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Jewellery Price!"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:textSize="26sp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/ar_one_sans_medium"
+        android:layout_marginTop="24dp"
+        android:textStyle="bold"/>
+
+    <ImageView
+        android:id="@+id/pump"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center"
+        android:background="@drawable/jewellery" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_pricepergram"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="14dp"
+        android:hint="Price of 1 Gram of Gold">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/price_per_gram"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:selectAllOnFocus="true"
+            app:boxStrokeColor="@color/black"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_totalgrams"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="14dp"
+        android:hint="Total Gram of Gold Purchased">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/total_grams"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:selectAllOnFocus="true"
+            app:boxStrokeColor="@color/black"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_charges"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="14dp"
+        android:hint="Making Charges (%)">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/making_charges"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:selectAllOnFocus="true"
+            app:boxStrokeColor="@color/black"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_gst"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="14dp"
+        android:hint="GST/Further Taxes (%)">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/gst"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:selectAllOnFocus="true"
+            app:boxStrokeColor="@color/black"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/calculate_button"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="#000000"
+        android:text="Let's Calculate!"
+        android:layout_gravity="center"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        app:cornerRadius="10dp" />
+
+
+
+    </LinearLayout>
+
+</ScrollView>

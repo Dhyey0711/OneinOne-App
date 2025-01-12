@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MaathsandFinance.Divide">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Divisibility !"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:textSize="26sp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/ar_one_sans_medium"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"/>
+
+    <ImageView
+        android:id="@+id/pump"
+        android:layout_width="100dp"
+        android:backgroundTint="@color/black"
+        android:layout_height="100dp"
+        android:layout_marginTop="24dp"
+        android:layout_gravity="center"
+        android:background="@drawable/divide" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_number_input"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="34dp"
+        android:hint="Enter the Number">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/number_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:selectAllOnFocus="true"
+            app:boxStrokeColor="@color/black"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/check_divisibility_button"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginTop="36dp"
+        android:backgroundTint="#000000"
+        android:text="Check"
+        android:layout_gravity="center"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        app:cornerRadius="10dp" />
+
+
+    </LinearLayout>
+</ScrollView>

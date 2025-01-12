@@ -1,0 +1,1906 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_Layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="1dp"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/segoesc"
+            android:text="OneInOne"
+            android:textColor="@color/black"
+            android:textSize="26sp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/animated_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+           android:layout_marginTop="4dp"
+            android:width="0dp"
+            android:fontFamily="@font/segoesc"
+            android:gravity="center"
+            android:includeFontPadding="true"
+            android:text="Simplify Life With Us  !"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:fontFamily="@font/ar_one_sans_medium"
+                        android:paddingBottom="8dp"
+                        android:text="Essential Tools"
+                        android:textColor="#000000"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <GridLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:alignmentMode="alignMargins"
+                        android:columnCount="3"
+                        android:columnOrderPreserved="false"
+                        android:orientation="horizontal"
+                        android:rowCount="2"
+                        android:rowOrderPreserved="false">
+
+                        <!-- Essential Tools -->
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_columnWeight="1"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:padding="8dp">
+
+                            <Button
+                                android:id="@+id/compass"
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:backgroundTint="#EEEEEE"
+                                android:elevation="40dp"
+                                app:cornerRadius="14dp"
+                                app:icon="@drawable/compass"
+                                app:iconSize="34dp"
+                                app:iconTint="@color/black"
+                                tools:ignore="SpeakableTextPresentCheck" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/ar_one_sans_medium"
+                                android:gravity="center"
+                                android:paddingTop="4dp"
+                                android:text="Compass"
+                                android:textColor="#000000"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_columnWeight="1"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:padding="8dp">
+
+                            <Button
+                                android:id="@+id/flashlight"
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:backgroundTint="#EEEEEE"
+                                app:cornerRadius="14dp"
+                                app:icon="@drawable/flashlight"
+                                app:iconSize="30dp"
+                                app:iconTint="@color/black"
+                                tools:ignore="SpeakableTextPresentCheck" />
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/ar_one_sans_medium"
+                                android:gravity="center"
+                                android:paddingTop="4dp"
+                                android:text="FlashLight"
+                                android:textColor="#000000"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_columnWeight="1"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:padding="8dp">
+
+                            <Button
+                                android:id="@+id/calculator"
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:backgroundTint="#EEEEEE"
+                                app:cornerRadius="14dp"
+                                app:icon="@drawable/calculator"
+                                app:iconSize="30dp"
+                                app:iconTint="@color/black"
+                                tools:ignore="SpeakableTextPresentCheck" />
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/ar_one_sans_medium"
+                                android:gravity="center"
+                                android:paddingTop="4dp"
+                                android:text="Calculator"
+                                android:textColor="#000000"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_columnWeight="1"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:padding="8dp">
+
+                            <Button
+                                android:id="@+id/deviceinfo"
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:backgroundTint="#EEEEEE"
+                                app:cornerRadius="14dp"
+                                app:icon="@drawable/information"
+                                app:iconSize="30dp"
+                                app:iconTint="@color/black"
+                                tools:ignore="SpeakableTextPresentCheck" />
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/ar_one_sans_medium"
+                                android:gravity="center"
+                                android:paddingTop="4dp"
+                                android:text="Device Information"
+                                android:textColor="#000000"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_columnWeight="1"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:padding="8dp">
+
+                            <Button
+                                android:id="@+id/sos"
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:backgroundTint="#EEEEEE"
+                                app:cornerRadius="14dp"
+                                app:icon="@drawable/sos"
+                                app:iconSize="34dp"
+                                app:iconTint="@color/black"
+                                tools:ignore="SpeakableTextPresentCheck" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/ar_one_sans_medium"
+                                android:gravity="center"
+                                android:paddingTop="4dp"
+                                android:text="SOS Number"
+                                android:textColor="#000000"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_columnWeight="1"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:padding="8dp">
+
+                            <Button
+                                android:id="@+id/temperature"
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:backgroundTint="#EEEEEE"
+                                app:cornerRadius="14dp"
+                                app:icon="@drawable/tempreture"
+                                app:iconSize="36dp"
+                                app:iconTint="@color/black"
+                                tools:ignore="SpeakableTextPresentCheck" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/ar_one_sans_medium"
+                                android:gravity="center"
+                                android:paddingTop="4dp"
+                                android:text="Device Temperature"
+                                android:textColor="#000000"
+                                android:textSize="12sp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_columnWeight="1"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:padding="8dp">
+
+                            <Button
+                                android:id="@+id/Qr"
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:backgroundTint="#EEEEEE"
+                                app:cornerRadius="14dp"
+                                app:icon="@drawable/qrcode"
+                                app:iconSize="30dp"
+                                app:iconTint="@color/black"
+                                tools:ignore="SpeakableTextPresentCheck" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/ar_one_sans_medium"
+                                android:gravity="center"
+                                android:paddingTop="4dp"
+                                android:text="QR Generator"
+                                android:textColor="#000000"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_columnWeight="1"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:padding="8dp">
+
+                            <Button
+                                android:id="@+id/scanner"
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:backgroundTint="#EEEEEE"
+                                app:cornerRadius="14dp"
+                                app:icon="@drawable/scanner"
+                                app:iconSize="30dp"
+                                app:iconTint="@color/black"
+                                tools:ignore="SpeakableTextPresentCheck" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/ar_one_sans_medium"
+                                android:gravity="center"
+                                android:paddingTop="4dp"
+                                android:text="Scanner"
+                                android:textColor="#000000"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                        <LinearLayout
+
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_columnWeight="1"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:padding="8dp">
+
+                            <Button
+                                android:id="@+id/battery"
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:backgroundTint="#EEEEEE"
+                                app:cornerRadius="14dp"
+                                app:icon="@drawable/battery"
+                                app:iconSize="30dp"
+                                app:iconTint="@color/black"
+                                tools:ignore="SpeakableTextPresentCheck" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/ar_one_sans_medium"
+                                android:gravity="center"
+                                android:paddingTop="4dp"
+                                android:text="Battery Info"
+                                android:textColor="#000000"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_columnWeight="1"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:padding="8dp">
+
+                            <Button
+                                android:id="@+id/pedometer"
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:backgroundTint="#EEEEEE"
+                                app:cornerRadius="14dp"
+                                app:icon="@drawable/pedometer"
+                                app:iconSize="30dp"
+                                app:iconTint="@color/black"
+                                tools:ignore="SpeakableTextPresentCheck" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/ar_one_sans_medium"
+                                android:gravity="center"
+                                android:paddingTop="4dp"
+                                android:text="Pedometer"
+                                android:textColor="#000000"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_columnWeight="1"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:padding="8dp">
+
+                            <Button
+                                android:id="@+id/BMI"
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:backgroundTint="#EEEEEE"
+                                app:cornerRadius="14dp"
+                                app:icon="@drawable/bmi"
+                                app:iconSize="30dp"
+                                app:iconTint="@color/black"
+                                tools:ignore="SpeakableTextPresentCheck" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/ar_one_sans_medium"
+                                android:gravity="center"
+                                android:paddingTop="4dp"
+                                android:text="BMI"
+                                android:textColor="#000000"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_columnWeight="1"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:padding="8dp">
+
+                            <Button
+                                android:id="@+id/password"
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:backgroundTint="#EEEEEE"
+                                app:cornerRadius="14dp"
+                                app:icon="@drawable/password"
+                                app:iconSize="30dp"
+                                app:iconTint="@color/black"
+                                tools:ignore="SpeakableTextPresentCheck" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/ar_one_sans_medium"
+                                android:gravity="center"
+                                android:paddingTop="4dp"
+                                android:text="Password"
+                                android:textColor="#000000"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_columnWeight="1"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:padding="8dp">
+
+                            <Button
+                                android:id="@+id/calender"
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:backgroundTint="#EEEEEE"
+                                app:cornerRadius="14dp"
+                                app:icon="@drawable/calendar"
+                                app:iconSize="30dp"
+                                app:iconTint="@color/black"
+                                tools:ignore="SpeakableTextPresentCheck" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/ar_one_sans_medium"
+                                android:gravity="center"
+                                android:paddingTop="4dp"
+                                android:text="Calendar"
+                                android:textColor="#000000"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_columnWeight="1"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:padding="8dp">
+
+                            <Button
+                                android:id="@+id/date"
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:backgroundTint="#EEEEEE"
+                                app:cornerRadius="14dp"
+                                app:icon="@drawable/datecalendar"
+                                app:iconSize="30dp"
+                                app:iconTint="@color/black"
+                                tools:ignore="SpeakableTextPresentCheck" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/ar_one_sans_medium"
+                                android:gravity="center"
+                                android:paddingTop="4dp"
+                                android:text="Date Calculator"
+                                android:textColor="#000000"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_columnWeight="1"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:padding="8dp">
+
+                            <Button
+                                android:id="@+id/age"
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:backgroundTint="#EEEEEE"
+                                app:cornerRadius="14dp"
+                                app:icon="@drawable/agecalculator"
+                                app:iconSize="30dp"
+                                app:iconTint="@color/black"
+                                tools:ignore="SpeakableTextPresentCheck" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:paddingTop="4dp"
+                                android:text="Age Calculator"
+                                android:textColor="#000000"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+                    </GridLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/ar_one_sans_medium"
+                        android:paddingTop="16dp"
+                        android:paddingBottom="8dp"
+                        android:layout_marginTop="16dp"
+                        android:text="Common Tools"
+                        android:textColor="#000000"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <GridLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:alignmentMode="alignMargins"
+                        android:columnCount="3"
+                        android:columnOrderPreserved="false"
+                        android:orientation="horizontal"
+                        android:rowOrderPreserved="false"
+                        tools:ignore="ExtraText">
+
+                        <!-- Common Tools -->
+                        <LinearLayout
+
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_columnWeight="1"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:padding="8dp">
+
+                            <Button
+                                android:id="@+id/fuelcost"
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:backgroundTint="#EEEEEE"
+                                app:cornerRadius="14dp"
+                                app:icon="@drawable/fuel"
+                                app:iconSize="30dp"
+                                app:iconTint="@color/black"
+                                tools:ignore="SpeakableTextPresentCheck" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:paddingTop="4dp"
+                                android:text="Fuel Cost"
+                                android:textColor="#000000"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_columnWeight="1"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:padding="8dp">
+
+                            <Button
+                                android:id="@+id/cooking"
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:backgroundTint="#EEEEEE"
+                                app:cornerRadius="14dp"
+                                app:icon="@drawable/cooking"
+                                app:iconSize="36dp"
+                                app:iconTint="@color/black"
+                                tools:ignore="SpeakableTextPresentCheck" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:paddingTop="4dp"
+                                android:text="Cooking Measures"
+                                android:textColor="#000000"
+                                android:textSize="12sp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_columnWeight="1"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:padding="8dp">
+
+                            <Button
+                                android:id="@+id/discount"
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:backgroundTint="#EEEEEE"
+                                app:cornerRadius="14dp"
+                                app:icon="@drawable/discount"
+                                app:iconSize="30dp"
+                                app:iconTint="@color/black"
+                                tools:ignore="SpeakableTextPresentCheck" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:paddingTop="4dp"
+                                android:text="Discount Count"
+                                android:textColor="#000000"
+                                android:textSize="12sp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_columnWeight="1"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:padding="8dp">
+
+                            <Button
+                                android:id="@+id/carloan"
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:backgroundTint="#EEEEEE"
+                                app:cornerRadius="14dp"
+                                app:icon="@drawable/carloan"
+                                app:iconSize="36dp"
+                                app:iconTint="@color/black"
+                                tools:ignore="SpeakableTextPresentCheck" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:paddingTop="4dp"
+                                android:text="Car Loan"
+                                android:textColor="#000000"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+                        .
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_columnWeight="1"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:padding="8dp">
+
+                            <Button
+                                android:id="@+id/jewellery"
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:backgroundTint="#EEEEEE"
+                                app:cornerRadius="14dp"
+                                app:icon="@drawable/jewellery"
+                                app:iconSize="30dp"
+                                app:iconTint="@color/black"
+                                tools:ignore="SpeakableTextPresentCheck" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:paddingTop="4dp"
+                                android:text="Jewellery"
+                                android:textColor="#000000"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_columnWeight="1"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:padding="8dp">
+
+                            <Button
+                                android:id="@+id/compreeimage"
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:backgroundTint="#EEEEEE"
+                                app:cornerRadius="14dp"
+                                app:icon="@drawable/compress"
+                                app:iconSize="36dp"
+                                app:iconTint="@color/black"
+                                tools:ignore="SpeakableTextPresentCheck" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:paddingTop="4dp"
+                                android:text="Compress Image"
+                                android:textColor="#000000"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_columnWeight="1"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:padding="8dp">
+
+                            <Button
+                                android:id="@+id/electricitybill"
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:backgroundTint="#EEEEEE"
+                                app:cornerRadius="14dp"
+                                app:icon="@drawable/energy"
+                                app:iconSize="30dp"
+                                app:iconTint="@color/black"
+                                tools:ignore="SpeakableTextPresentCheck" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:paddingTop="4dp"
+                                android:text="Electricity Bill"
+                                android:textColor="#000000"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_columnWeight="1"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:padding="8dp">
+
+                            <Button
+                                android:id="@+id/energy"
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:backgroundTint="#EEEEEE"
+                                app:cornerRadius="14dp"
+                                app:icon="@drawable/fat"
+                                app:iconSize="30dp"
+                                app:iconTint="@color/black"
+                                tools:ignore="SpeakableTextPresentCheck" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:paddingTop="4dp"
+                                android:text="Calculate Body Fat"
+                                android:textColor="#000000"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_columnWeight="1"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:padding="8dp">
+
+                            <Button
+                                android:id="@+id/aspectratio"
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:backgroundTint="#EEEEEE"
+                                app:cornerRadius="14dp"
+                                app:icon="@drawable/aspectratio"
+                                app:iconSize="36dp"
+                                app:iconTint="@color/black"
+                                tools:ignore="SpeakableTextPresentCheck" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:paddingTop="4dp"
+                                android:text="Aspect Ratio"
+                                android:textColor="#000000"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_columnWeight="1"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:padding="8dp">
+
+                            <Button
+                                android:id="@+id/cloth"
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:backgroundTint="#EEEEEE"
+                                app:cornerRadius="14dp"
+                                app:icon="@drawable/cloth"
+                                app:iconSize="30dp"
+                                app:iconTint="@color/black"
+                                tools:ignore="SpeakableTextPresentCheck" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:paddingTop="4dp"
+                                android:text="Cloth Size"
+                                android:textColor="#000000"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_columnWeight="1"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:padding="8dp">
+
+                            <Button
+                                android:id="@+id/shoes"
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:backgroundTint="#EEEEEE"
+                                app:cornerRadius="14dp"
+                                app:icon="@drawable/shoes"
+                                app:iconSize="34dp"
+                                app:iconTint="@color/black"
+                                tools:ignore="SpeakableTextPresentCheck" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:paddingTop="4dp"
+                                android:text="Shoes Size"
+                                android:textColor="#000000"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_columnWeight="1"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:padding="8dp">
+
+                            <Button
+                                android:id="@+id/hat"
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:backgroundTint="#EEEEEE"
+                                app:cornerRadius="14dp"
+                                app:icon="@drawable/hat"
+                                app:iconSize="34dp"
+                                app:iconTint="@color/black" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:paddingTop="4dp"
+                                android:text="Hat Size"
+                                android:textColor="#000000"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_columnWeight="1"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:padding="8dp">
+
+                            <Button
+                                android:id="@+id/ring"
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:backgroundTint="#EEEEEE"
+                                app:cornerRadius="14dp"
+                                app:icon="@drawable/ring"
+                                app:iconSize="30dp"
+                                app:iconTint="@color/black" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:paddingTop="4dp"
+                                android:text="Ring Size"
+                                android:textColor="#000000"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_columnWeight="1"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:padding="8dp">
+
+                            <Button
+                                android:id="@+id/wire"
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:backgroundTint="#EEEEEE"
+                                app:cornerRadius="14dp"
+                                app:icon="@drawable/wire"
+                                app:iconSize="32dp"
+                                app:iconTint="@color/black" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:paddingTop="4dp"
+                                android:text="Wire size"
+                                android:textColor="#000000"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_columnWeight="1"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:padding="8dp">
+
+                            <Button
+                                android:id="@+id/hextorgb"
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:backgroundTint="#EEEEEE"
+                                app:cornerRadius="14dp"
+                                app:icon="@drawable/hextorgb"
+                                app:iconSize="30dp"
+                                app:iconTint="@color/black" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:paddingTop="4dp"
+                                android:text="Hex to RGB"
+                                android:textColor="#000000"
+                                android:textSize="12sp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_columnWeight="1"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:padding="8dp">
+
+                            <Button
+                                android:id="@+id/ruler"
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:backgroundTint="#EEEEEE"
+                                app:cornerRadius="14dp"
+                                app:icon="@drawable/ruler"
+                                app:iconSize="30dp"
+                                app:iconTint="@color/black" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:paddingTop="4dp"
+                                android:text="Ruler"
+                                android:textColor="#000000"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_columnWeight="1"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:padding="8dp">
+
+                            <Button
+                                android:id="@+id/protractor"
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:backgroundTint="#EEEEEE"
+                                app:cornerRadius="14dp"
+                                app:icon="@drawable/protactor"
+                                app:iconSize="30dp"
+                                app:iconTint="@color/black" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:paddingTop="4dp"
+                                android:text="Protractor"
+                                android:textColor="#000000"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_columnWeight="1"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:padding="8dp">
+
+                            <Button
+                                android:id="@+id/stopwatch"
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:backgroundTint="#EEEEEE"
+                                app:cornerRadius="14dp"
+                                app:icon="@drawable/stopwatch"
+                                app:iconSize="30dp"
+                                app:iconTint="@color/black" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:paddingTop="4dp"
+                                android:text="StopWatch"
+                                android:textColor="#000000"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_columnWeight="1"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:padding="8dp">
+
+                            <Button
+                                android:id="@+id/morse"
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:backgroundTint="#EEEEEE"
+                                app:cornerRadius="14dp"
+                                app:icon="@drawable/morse"
+                                app:iconSize="30dp"
+                                app:iconTint="@color/black" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:paddingTop="4dp"
+                                android:text="Morse"
+                                android:textColor="#000000"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_columnWeight="1"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:padding="8dp">
+
+                            <Button
+                                android:id="@+id/cryptography"
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:backgroundTint="#EEEEEE"
+                                app:cornerRadius="14dp"
+                                app:icon="@drawable/cryptography"
+                                app:iconSize="30dp"
+                                app:iconTint="@color/black" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:paddingTop="4dp"
+                                android:text="Cryptography"
+                                android:textColor="#000000"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_columnWeight="1"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:padding="8dp">
+
+                            <Button
+                                android:id="@+id/counting"
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:backgroundTint="#EEEEEE"
+                                app:cornerRadius="14dp"
+                                app:icon="@drawable/counter"
+                                app:iconSize="30dp"
+                                app:iconTint="@color/black" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:paddingTop="4dp"
+                                android:text="Counter"
+                                android:textColor="#000000"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+                    </GridLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:paddingTop="16dp"
+                        android:paddingBottom="8dp"
+                        android:text="Mathematics"
+                        android:textColor="#000000"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <GridLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:alignmentMode="alignMargins"
+                        android:columnCount="3"
+                        android:columnOrderPreserved="false"
+                        android:orientation="horizontal"
+                        android:rowOrderPreserved="false">
+
+                        <!-- MATH -->
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_columnWeight="1"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:padding="8dp">
+
+                            <Button
+                                android:id="@+id/linear"
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:backgroundTint="#EEEEEE"
+                                app:cornerRadius="14dp"
+                                app:icon="@drawable/linear"
+                                app:iconSize="34dp"
+                                app:iconTint="@color/black" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:paddingTop="4dp"
+                                android:text="Linear Equation"
+                                android:textColor="#000000"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_columnWeight="1"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:padding="8dp">
+
+                            <Button
+                                android:id="@+id/quadratics"
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:backgroundTint="#EEEEEE"
+                                app:cornerRadius="14dp"
+                                app:icon="@drawable/quadratic"
+                                app:iconSize="34dp"
+                                app:iconTint="@color/black" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:paddingTop="4dp"
+                                android:text="Quadratic Equation"
+                                android:textColor="#000000"
+                                android:textSize="12sp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_columnWeight="1"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:padding="8dp">
+
+                            <Button
+                                android:id="@+id/cubic"
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:backgroundTint="#EEEEEE"
+                                app:cornerRadius="14dp"
+                                app:icon="@drawable/cubic"
+                                app:iconSize="34dp"
+                                app:iconTint="@color/black" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:paddingTop="4dp"
+                                android:text="Cubic Equation"
+                                android:textColor="#000000"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_columnWeight="1"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:padding="8dp">
+
+                            <Button
+                                android:id="@+id/number"
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:backgroundTint="#EEEEEE"
+                                app:cornerRadius="14dp"
+                                app:icon="@drawable/number"
+                                app:iconSize="30dp"
+                                app:iconTint="@color/black" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:paddingTop="4dp"
+                                android:text="Number Base"
+                                android:textColor="#000000"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+                        .
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_columnWeight="1"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:padding="8dp">
+
+                            <Button
+                                android:id="@+id/permutation"
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:backgroundTint="#EEEEEE"
+                                app:cornerRadius="14dp"
+                                app:icon="@drawable/permutation"
+                                app:iconSize="30dp"
+                                app:iconTint="@color/black" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:paddingTop="4dp"
+                                android:text="Permutation"
+                                android:textColor="#000000"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_columnWeight="1"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:padding="8dp">
+
+                            <Button
+                                android:id="@+id/combination"
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:backgroundTint="#EEEEEE"
+                                app:cornerRadius="14dp"
+                                app:icon="@drawable/copyright"
+                                app:iconSize="30dp"
+                                app:iconTint="@color/black" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:paddingTop="4dp"
+                                android:text="Combination"
+                                android:textColor="#000000"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_columnWeight="1"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:padding="8dp">
+
+                            <Button
+                                android:id="@+id/splitter"
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:backgroundTint="#EEEEEE"
+                                app:cornerRadius="14dp"
+                                app:icon="@drawable/split"
+                                app:iconSize="30dp"
+                                app:iconTint="@color/black" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:paddingTop="4dp"
+                                android:text="Splitter"
+                                android:textColor="#000000"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_columnWeight="1"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:padding="8dp">
+
+                            <Button
+                                android:id="@+id/area"
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:backgroundTint="#EEEEEE"
+                                app:cornerRadius="14dp"
+                                app:icon="@drawable/area"
+                                app:iconSize="30dp"
+                                app:iconTint="@color/black" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:paddingTop="4dp"
+                                android:text="Area"
+                                android:textColor="#000000"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_columnWeight="1"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:padding="8dp">
+
+                            <Button
+                                android:id="@+id/root"
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:backgroundTint="#EEEEEE"
+                                app:cornerRadius="14dp"
+                                app:icon="@drawable/root"
+                                app:iconSize="30dp"
+                                app:iconTint="@color/black" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:paddingTop="4dp"
+                                android:text="Roots"
+                                android:textColor="#000000"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_columnWeight="1"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:padding="8dp">
+
+                            <Button
+                                android:id="@+id/ap"
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:backgroundTint="#EEEEEE"
+                                app:cornerRadius="14dp"
+                                app:icon="@drawable/progress"
+                                app:iconSize="30dp"
+                                app:iconTint="@color/black" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:paddingTop="4dp"
+                                android:text="Arithmetic Progression"
+                                android:textColor="#000000"
+                                android:textSize="12sp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_columnWeight="1"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:padding="8dp">
+
+                            <Button
+                                android:id="@+id/gp"
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:backgroundTint="#EEEEEE"
+                                app:cornerRadius="14dp"
+                                app:icon="@drawable/progress"
+                                app:iconSize="30dp"
+                                app:iconTint="@color/black" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:paddingTop="4dp"
+                                android:text="Geometric Progression"
+                                android:textColor="#000000"
+                                android:textSize="12sp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_columnWeight="1"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:padding="8dp">
+
+                            <Button
+                                android:id="@+id/hp"
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:backgroundTint="#EEEEEE"
+                                app:cornerRadius="14dp"
+                                app:icon="@drawable/progress"
+                                app:iconSize="30dp"
+                                app:iconTint="@color/black" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:paddingTop="4dp"
+                                android:text="Harmonic Progression"
+                                android:textColor="#000000"
+                                android:textSize="12sp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_columnWeight="1"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:padding="8dp">
+
+                            <Button
+                                android:id="@+id/probability"
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:backgroundTint="#EEEEEE"
+                                app:cornerRadius="14dp"
+                                app:icon="@drawable/probability"
+                                app:iconSize="34dp"
+                                app:iconTint="@color/black"
+                                tools:ignore="SpeakableTextPresentCheck" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:paddingTop="4dp"
+                                android:text="Probability"
+                                android:textColor="#000000"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_columnWeight="1"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:padding="8dp">
+
+                            <Button
+                                android:id="@+id/exponentandpower"
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:backgroundTint="#EEEEEE"
+                                app:cornerRadius="14dp"
+                                app:icon="@drawable/exponent"
+                                app:iconSize="36dp"
+                                app:iconTint="@color/black" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:paddingTop="4dp"
+                                android:text="Exponent"
+                                android:textColor="#000000"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_columnWeight="1"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:padding="8dp">
+
+                            <Button
+                                android:id="@+id/divisibility"
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:backgroundTint="#EEEEEE"
+                                app:cornerRadius="14dp"
+                                app:icon="@drawable/divide"
+                                app:iconSize="30dp"
+                                app:iconTint="@color/black" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:paddingTop="4dp"
+                                android:text="Divisibility"
+                                android:textColor="#000000"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_columnWeight="1"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:padding="8dp">
+
+                            <Button
+                                android:id="@+id/areainfo"
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:backgroundTint="#EEEEEE"
+                                app:cornerRadius="14dp"
+                                app:icon="@drawable/areainfo"
+                                app:iconSize="30dp"
+                                app:iconTint="@color/black" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:paddingTop="4dp"
+                                android:text="AREA INFO"
+                                android:textColor="#000000"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_columnWeight="1"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:padding="8dp">
+
+                            <Button
+                                android:id="@+id/volume"
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:backgroundTint="#EEEEEE"
+                                app:cornerRadius="14dp"
+                                app:icon="@drawable/volume"
+                                app:iconSize="34dp"
+                                app:iconTint="@color/black" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:paddingTop="4dp"
+                                android:text="Volume"
+                                android:textColor="#000000"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_columnWeight="1"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:padding="8dp">
+
+                            <Button
+                                android:id="@+id/unit"
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:backgroundTint="#EEEEEE"
+                                app:cornerRadius="14dp"
+                                app:icon="@drawable/unitinfo"
+                                app:iconSize="30dp"
+                                app:iconTint="@color/black" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:paddingTop="4dp"
+                                android:text="UNIT INFO"
+                                android:textColor="#000000"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_columnWeight="1"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:padding="8dp">
+
+                            <Button
+                                android:id="@+id/shapesinfo"
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:backgroundTint="#EEEEEE"
+                                app:cornerRadius="14dp"
+                                app:icon="@drawable/shapes"
+                                app:iconSize="30dp"
+                                app:iconTint="@color/black" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:paddingTop="4dp"
+                                android:text="SHAPE INFO"
+                                android:textColor="#000000"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_columnWeight="1"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:padding="8dp">
+
+                            <Button
+                                android:id="@+id/rootsinfo"
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:backgroundTint="#EEEEEE"
+                                app:cornerRadius="14dp"
+                                app:icon="@drawable/angle"
+                                app:iconSize="30dp"
+                                app:iconTint="@color/black"
+                                tools:ignore="SpeakableTextPresentCheck" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:paddingTop="4dp"
+                                android:text="Angle
+                                 INFO"
+                                android:textColor="#000000"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_columnWeight="1"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:padding="8dp">
+
+                            <Button
+                                android:id="@+id/counter"
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:backgroundTint="#EEEEEE"
+                                app:cornerRadius="14dp"
+                                app:icon="@drawable/change"
+                                app:iconSize="36dp"
+                                app:iconTint="@color/black"
+                                tools:ignore="SpeakableTextPresentCheck" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:paddingTop="4dp"
+                                android:text="Temperature Converter "
+                                android:textColor="#000000"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+                    </GridLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="8dp"
+                        android:text="Fun With OneinOne!"
+                        android:textColor="#000000"
+                        android:layout_marginTop="16dp"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <GridLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:alignmentMode="alignMargins"
+                        android:columnCount="3"
+                        android:layout_marginTop="8dp"
+                        android:columnOrderPreserved="false"
+                        android:orientation="horizontal"
+                        android:rowCount="1"
+                        android:rowOrderPreserved="false">
+
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_columnWeight="1"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:padding="8dp">
+
+
+                            <Button
+                                android:id="@+id/math"
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:backgroundTint="#EEEEEE"
+                                app:cornerRadius="14dp"
+                                app:icon="@drawable/math_smile"
+                                app:iconSize="36dp"
+                                app:iconTint="@color/black" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:paddingTop="4dp"
+                                android:text="Fun With Math !"
+                                android:textColor="#000000"
+                                android:textSize="14sp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_columnWeight="1"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:padding="8dp">
+
+                            <Button
+                                android:id="@+id/tictac"
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:backgroundTint="#EEEEEE"
+                                app:cornerRadius="14dp"
+                                app:icon="@drawable/tic_tac"
+                                app:iconSize="30dp"
+                                app:iconTint="@color/black" />
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:paddingTop="4dp"
+                                android:text="Tic-Tac-Toe"
+                                android:textColor="#000000"
+                                android:textSize="12sp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_columnWeight="1"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:padding="8dp">
+
+                            <Button
+                                android:id="@+id/quiz"
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:backgroundTint="#EEEEEE"
+                                app:cornerRadius="14dp"
+                                app:icon="@drawable/fun_fact"
+                                app:iconSize="30dp"
+                                app:iconTint="@color/black" />
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:paddingTop="4dp"
+                                android:text="Short Quiz !"
+                                android:textColor="#000000"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+
+                    </GridLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</LinearLayout>

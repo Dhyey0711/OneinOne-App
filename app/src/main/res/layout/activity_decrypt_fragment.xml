@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- TextInputLayout for Encrypted Text Input -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tilEncryptedText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Paste the Encrypted text Here">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/encryptedText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:selectAllOnFocus="true"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- TextInputLayout for Decryption Key Input -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tilDecryptionKey"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:hint="Paste your Decryption key">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/decryptionKey"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:selectAllOnFocus="true"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Decrypt Button -->
+        <Button
+            android:id="@+id/decryptButton"
+            android:layout_width="150dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="24dp"
+            android:layout_gravity="center"
+            android:backgroundTint="@color/black"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            app:cornerRadius="10dp"
+            android:textSize="16sp"
+            android:text="Decrypt"/>
+
+        <!-- TextInputLayout for Output Text -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tilOutputText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:hint="Your Decrypted Text Appears Here">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/outputText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:selectAllOnFocus="true"
+                android:focusable="false"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Copy Button -->
+        <Button
+            android:id="@+id/copyButton"
+            android:layout_width="150dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="24dp"
+            android:layout_gravity="center"
+            android:backgroundTint="@color/black"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            app:cornerRadius="10dp"
+            android:textSize="16sp"
+            android:text="Copy"/>
+
+        <!-- Share Button -->
+        <Button
+            android:id="@+id/shareButton"
+            android:layout_width="150dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="24dp"
+            android:layout_gravity="center"
+            android:backgroundTint="@color/black"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            app:cornerRadius="10dp"
+            android:textSize="16sp"
+            android:text="Share"/>
+    </LinearLayout>
+</ScrollView>

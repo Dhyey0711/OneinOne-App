@@ -1,0 +1,66 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="FlashLight !"
+        android:layout_gravity="center"
+        android:textSize="26sp"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:fontFamily="@font/ar_one_sans_medium"
+        android:layout_marginTop="24dp"
+        android:textStyle="bold"/>
+
+    <ImageView
+        android:id="@+id/pump"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="24dp"
+        android:layout_gravity="center"
+        android:background="@drawable/flashlight"
+        android:backgroundTint="@color/black" />
+
+
+    <Button
+        android:id="@+id/btnToggleFlashlight"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:backgroundTint="@color/black"
+        android:text="ON"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:cornerRadius="10dp" />
+
+    <TextView
+        android:id="@+id/tvFrequency"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Frequency:"
+        android:textStyle="bold"
+        android:textSize="24sp"
+        android:layout_gravity="center"
+        android:textColor="@color/black"
+        android:layout_below="@id/btnToggleFlashlight"
+        android:layout_marginTop="32dp"
+        android:layout_centerHorizontal="true" />
+
+    <SeekBar
+        android:id="@+id/seekBarFrequency"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvFrequency"
+        android:layout_marginTop="16dp"
+        android:thumb="@drawable/seekbar_thumb"
+        android:progressDrawable="@drawable/seekbar_progress"
+        android:max="4" />
+</LinearLayout>

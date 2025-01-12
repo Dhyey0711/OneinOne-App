@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Convert Temperature Easily!"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textSize="26sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/ar_one_sans_medium"
+            android:layout_marginTop="24dp"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText" />
+
+        <ImageView
+            android:id="@+id/pump"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="24dp"
+            android:layout_gravity="center"
+            android:background="@drawable/change"
+            android:backgroundTint="@color/black"
+            tools:ignore="ContentDescription" />
+
+        <Spinner
+            android:id="@+id/spinnerSourceUnit"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="24dp"
+            android:entries="@array/temperature_units" />
+
+    <!-- TextInputLayout with TextInputEditText for entering source temperature value -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/til_editTextSourceTemperature"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="24dp"
+            android:hint="Enter source temperature">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editTextSourceTemperature"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:inputType="numberDecimal"
+                android:selectAllOnFocus="true"
+                app:boxStrokeColor="@color/black" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Spinner for Target Temperature Unit Selection -->
+        <Spinner
+            android:id="@+id/spinnerTargetUnit"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="24dp"
+            android:entries="@array/temperature" />
+
+    <!-- TextInputLayout with TextInputEditText for displaying the converted temperature value -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/til_editTextTargetTemperature"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="24dp"
+            android:hint="Converted temperature">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editTextTargetTemperature"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:inputType="numberDecimal"
+                android:selectAllOnFocus="true"
+                app:boxStrokeColor="@color/black" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Button to Perform Conversion -->
+        <Button
+            android:id="@+id/btnConvert"
+            android:layout_width="150dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="24dp"
+            android:backgroundTint="@color/black"
+            android:text="Convert!"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:cornerRadius="10dp"
+            tools:ignore="HardcodedText" />
+    </LinearLayout>
+
+</ScrollView>
+

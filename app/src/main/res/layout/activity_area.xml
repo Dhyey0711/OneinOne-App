@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MaathsandFinance.Area">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calculate Area Easily !"
+        android:layout_gravity="center"
+        android:textSize="26sp"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:fontFamily="@font/ar_one_sans_medium"
+        android:layout_marginTop="24dp"
+        android:textStyle="bold"/>
+
+    <ImageView
+        android:id="@+id/pump"
+        android:layout_width="100dp"
+        android:backgroundTint="@color/black"
+        android:layout_height="100dp"
+        android:layout_marginTop="34dp"
+        android:layout_gravity="center"
+        android:background="@drawable/area" />
+    <Spinner
+        android:id="@+id/shape_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:entries="@array/shapes_array" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_param1"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="14dp"
+        android:hint="Enter the Parameters">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/param1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:selectAllOnFocus="true"
+            app:boxStrokeColor="@color/black"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_param2"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="14dp"
+        android:hint="Enter the Parameters">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/param2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:selectAllOnFocus="true"
+            app:boxStrokeColor="@color/black"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/calculate_button"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="#000000"
+        android:text="Let's Calculate!"
+        android:layout_gravity="center"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        app:cornerRadius="10dp" />
+
+
+</LinearLayout>

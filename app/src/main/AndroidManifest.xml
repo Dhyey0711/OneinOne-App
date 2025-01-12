@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission
+        android:name="android.permission.READ_PRIVILEGED_PHONE_STATE"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Base.Theme.OneinOneAllToolsApp"
+        tools:targetApi="31">
+        <activity
+            android:name=".CommonTools.BodyFatCalculatorActivity"
+            android:exported="false" />
+        <activity
+            android:name=".EssentialTools.DeviceInfoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FunwithOneinOne.Game_start_math"
+            android:exported="false" />
+        <activity
+            android:name=".FunwithOneinOne.Game_Starts"
+            android:exported="false" />
+        <activity
+            android:name=".FunwithOneinOne.Fun_Facts"
+            android:exported="false" />
+        <activity
+            android:name=".MaathsandFinance.Temperature"
+            android:exported="false" />
+        <activity
+            android:name=".MaathsandFinance.Counter"
+            android:exported="false" />
+        <activity
+            android:name=".FunwithOneinOne.QuizActivity"
+            android:exported="false" />
+        <activity
+            android:name=".EssentialTools.qRcodeFragments.FragmentVisitingCardActivity"
+            android:exported="false" />
+        <activity
+            android:name=".EssentialTools.qRcodeFragments.FragmentQrEventCardActivity"
+            android:exported="false" />
+        <activity
+            android:name=".EssentialTools.qRcodeFragments.FragmentQrWifiGeneratorActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SplashScreenActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".CommonTools.DecryptFragment"
+            android:exported="false" />
+        <activity
+            android:name=".CommonTools.EncryptFragment"
+            android:exported="false" />
+        <activity
+            android:name=".MaathsandFinance.NumberBase"
+            android:exported="false" />
+        <activity
+            android:name=".MaathsandFinance.GraphInfo"
+            android:exported="false" />
+        <activity
+            android:name=".MaathsandFinance.AreaInfo"
+            android:exported="false" />
+        <activity
+            android:name=".MaathsandFinance.UnitInfo"
+            android:exported="false" />
+        <activity
+            android:name=".MaathsandFinance.ShapeInfo"
+            android:exported="false" />
+        <activity
+            android:name=".MaathsandFinance.Volume"
+            android:exported="false" />
+        <activity
+            android:name=".MaathsandFinance.AngleInfo"
+            android:exported="false" />
+        <activity
+            android:name=".MaathsandFinance.Divide"
+            android:exported="false" />
+        <activity
+            android:name=".MaathsandFinance.Exponent"
+            android:exported="false" />
+        <activity
+            android:name=".MaathsandFinance.Probability"
+            android:exported="false" />
+        <activity
+            android:name=".MaathsandFinance.Hp"
+            android:exported="false" />
+        <activity
+            android:name=".MaathsandFinance.Gp"
+            android:exported="false" />
+        <activity
+            android:name=".MaathsandFinance.Ap"
+            android:exported="false" />
+        <activity
+            android:name=".MaathsandFinance.Roots"
+            android:exported="false" />
+        <activity
+            android:name=".MaathsandFinance.Area"
+            android:exported="false" />
+        <activity
+            android:name=".MaathsandFinance.Splitter"
+            android:exported="false" />
+        <activity
+            android:name=".MaathsandFinance.Combination"
+            android:exported="false" />
+        <activity
+            android:name=".MaathsandFinance.Permutation"
+            android:exported="false" />
+
+        <activity
+            android:name=".MaathsandFinance.Cubic"
+            android:exported="false" />
+        <activity
+            android:name=".MaathsandFinance.Quadratic"
+            android:exported="false" />
+        <activity
+            android:name=".MaathsandFinance.Linear"
+            android:exported="false" />
+        <activity
+            android:name=".CommonTools.TaxInfo"
+            android:exported="false" />
+        <activity
+            android:name=".CommonTools.Cryptography"
+            android:exported="false" />
+        <activity
+            android:name=".CommonTools.Morse"
+            android:exported="false" />
+        <activity
+            android:name=".CommonTools.StopWatch"
+            android:exported="false" />
+        <activity
+            android:name=".CommonTools.Protractor"
+            android:exported="false" />
+        <activity
+            android:name=".CommonTools.Ruler"
+            android:exported="false" />
+        <activity
+            android:name=".CommonTools.WireSize"
+            android:exported="false" />
+        <activity
+            android:name=".CommonTools.RingSize"
+            android:exported="false" />
+        <activity
+            android:name=".CommonTools.HatSize"
+            android:exported="false" />
+        <activity
+            android:name=".CommonTools.ShoesSize"
+            android:exported="false" />
+        <activity
+            android:name=".CommonTools.ClothSize"
+            android:exported="false" />
+        <activity
+            android:name=".CommonTools.AspectRatio"
+            android:exported="false" />
+        <activity
+            android:name=".CommonTools.ElectricityBills"
+            android:exported="false" />
+        <activity
+            android:name=".CommonTools.CompressImage"
+            android:exported="false" />
+        <activity
+            android:name=".CommonTools.Jewellery"
+            android:exported="false" />
+        <activity
+            android:name=".CommonTools.HRconverter.rgbtohexfragment"
+            android:exported="false" />
+        <activity
+            android:name=".CommonTools.HRconverter.hrconverter"
+            android:exported="false" />
+        <activity
+            android:name=".CommonTools.HRconverter.hextorgbfragment"
+            android:exported="false" />
+        <activity
+            android:name=".CommonTools.Carloan"
+            android:exported="false" />
+        <activity
+            android:name=".CommonTools.Discountcount"
+            android:exported="false" />
+        <activity
+            android:name=".CommonTools.cookingMeasure"
+            android:exported="false" />
+        <activity
+            android:name=".CommonTools.Fuelcost"
+            android:exported="false" />
+        <activity
+            android:name=".EssentialTools.Age"
+            android:exported="false" />
+        <activity
+            android:name=".EssentialTools.Date"
+            android:exported="false" />
+        <activity
+            android:name=".EssentialTools.Calender"
+            android:exported="false" />
+        <activity
+            android:name=".EssentialTools.Password"
+            android:exported="false" />
+        <activity
+            android:name=".EssentialTools.BMI"
+            android:exported="false" />
+        <activity
+            android:name=".EssentialTools.pedometer"
+            android:exported="false" />
+        <activity
+            android:name=".EssentialTools.BatteryInfo"
+            android:exported="false" />
+        <activity
+            android:name=".EssentialTools.Scanner"
+            android:exported="false" />
+        <activity
+            android:name=".EssentialTools.qRcodeFragments.QrGenerator"
+            android:exported="false" />
+        <activity
+            android:name=".EssentialTools.EmergencyNumbers"
+            android:exported="false" />
+        <activity
+            android:name=".EssentialTools.Calculator"
+            android:exported="false" />
+        <activity
+            android:name=".FunwithOneinOne.TicTacActivity"
+            android:exported="false" />
+        <activity
+            android:name=".EssentialTools.TemperatureActivity"
+            android:exported="false" />
+        <activity
+            android:name=".EssentialTools.FlashlightActivity"
+            android:exported="false" />
+        <activity
+            android:name=".EssentialTools.CompassActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+    </application>
+
+</manifest>

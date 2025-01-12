@@ -1,0 +1,116 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.OneinOneAllToolsApp" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+       <item name="colorPrimary">#000000</item>
+    </style>
+
+    <style name="Theme.OneinOneAllToolsApp" parent="Base.Theme.OneinOneAllToolsApp" />
+
+    <!-- Style for Button1 -->
+    <style name="Button1">
+        <item name="android:layout_width">75dp</item>
+        <item name="android:layout_height">75dp</item>
+        <item name="android:textSize">27sp</item>
+        <item name="android:background">@drawable/shape1</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginTop">20dp</item>
+    </style>
+
+    <!-- Style for CustomTextInputEditText -->
+    <!-- res/values/styles.xml -->
+    <style name="CustomTextInputEditText" parent="Widget.MaterialComponents.TextInputEditText.OutlinedBox">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColorHint">#000000</item>
+        <item name="android:background">@drawable/edit_text_shape</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:singleLine">true</item>
+        <item name="hintTextColor">@color/black</item>
+        <item name="boxStrokeColor">@color/black</item>
+        <item name="boxStrokeErrorColor">#F20606</item>
+    </style>
+
+    <string-array name="aspect_ratios">
+        <item>7680 x 4320 (8K UHDTV)</item>
+        <item>5120 x 2880 (5K, iMac with retina screen)</item>
+        <item>3840 x 2160 (4K UHDTV)</item>
+        <item>2048 x 1536 (iPad with retina screen)</item>
+        <item>1920 x 1200 (Widescreen computer monitor)</item>
+        <item>1920 x 1080 (HD TV, iPhone 6 plus)</item>
+        <item>1334 x 750 (iPhone 6)</item>
+        <item>1200 x 630 (Facebook)</item>
+        <item>1136 x 640 (iPhone 5 screen)</item>
+        <item>1024 x 768 (iPad)</item>
+        <item>1024 x 512 (Twitter)</item>
+        <item>960 x 640 (iPhone 4 screen)</item>
+        <item>800 x 600</item>
+        <item>728 x 90 (Common web banner ad size)</item>
+        <item>720 x 486 (PAL)</item>
+        <item>640 x 480 (VGA)</item>
+        <item>576 x 486 (NTSC)</item>
+        <item>320 x 480 (HVGA)</item>
+    </string-array>
+    <string-array name="shapes_volume">
+        <item>Cube</item>
+        <item>Sphere</item>
+        <item>Cylinder</item>
+        <item>Rectangular Prism</item>
+        <item>Cone</item>
+        <item>Pyramid</item>
+    </string-array>
+
+    <style name="CalcButton">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_marginStart">4dp</item>
+        <item name="android:layout_gravity">fill</item>
+        <item name="android:layout_columnWeight">1</item>
+        <item name="android:layout_rowWeight">1</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+        <string-array name="temperature_units">
+            <item>Celsius</item>
+            <item>Fahrenheit</item>
+            <item>Kelvin</item>
+        </string-array>
+    <string-array name="temperature">
+        <item>Fahrenheit</item>
+        <item>Celsius</item>
+        <item>Kelvin</item>
+    </string-array>
+
+
+        <string-array name="power_units">
+            <item>Watt</item>
+            <item>Kilowatt</item>
+        </string-array>
+
+       <string-array name="appliance_array">
+        <item>Refrigerator</item>
+        <item>Washing Machine</item>
+        <item>Air Conditioner</item>
+        <item>Microwave</item>
+        <item>Dishwasher</item>
+        <item>Electric Oven</item>
+        <item>Fan</item>
+        <item>Television</item>
+        <item>Computer</item>
+       </string-array>
+
+        <string-array name="country_array">
+                <item>Select Country</item>
+                <item>USA</item>
+                <item>India</item>
+                <item>UK</item>
+                <item>Germany</item>
+                <item>Australia</item>
+
+        </string-array>
+
+
+
+    <style name="textstyle">bold</style>
+</resources>
