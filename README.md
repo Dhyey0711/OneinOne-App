@@ -108,7 +108,3 @@ This tagline reflects the mission of the app: simplifying your daily life by pro
 
 ## Contribution
 We welcome your contributions to improve and expand the app. Whether you have ideas for new features or suggestions to enhance existing ones, feel free to raise an issue or submit a pull request.
-
----
-
-This updated version highlights the vast number of features (including games) while providing a professional and detailed description for a GitHub `README.md` file. Let me know if you'd like help with any specific Markdown formatting or additional content!
